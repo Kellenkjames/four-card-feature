@@ -1,0 +1,21 @@
+// -----------------------------------------------------
+// Typography
+// -----------------------------------------------------
+
+$font-primary: 'Poppins', sans-serif;
+
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
+$font-size-body: 1.5rem; // 15px
+
+body {
+  font-family: $font-primary;
+  font-size: $font-size-body;
+}
+
+html {
+  font-size: 62.5%; // 62.5% of 16px = 10px for easy rem calculations
+}

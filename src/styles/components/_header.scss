@@ -1,0 +1,31 @@
+@import '../abstracts/mixins';
+@import '../abstracts/variables';
+
+.header {
+  max-width: 54rem;
+  margin: 10.2rem 45rem 7.4rem 45rem;
+
+  &__title {
+    @include text-preset-2;
+    margin-bottom: $spacing-16;
+
+    strong {
+      @include text-preset-1;
+    }
+  }
+
+  &__subtitle {
+    @include text-preset-4;
+    margin-bottom: 0;
+  }
+
+  @media (max-width: 1200px) {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  @media (max-width: 768px) {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+}

@@ -1,9 +1,14 @@
 @import '../abstracts/mixins';
 @import '../abstracts/variables';
 
+.header-container {
+  margin: 10.2rem auto 7.4rem;
+  border: 1px solid black;
+}
+
 .header {
   max-width: 54rem;
-  margin: 10.2rem 45rem 7.4rem 45rem;
+  margin: 0 auto;
 
   &__title {
     @include text-preset-2;

@@ -1,26 +1,47 @@
 @import '../abstracts/mixins';
 @import '../abstracts/variables';
 
-.feature-card {
-  border-top: 4px solid $color-cyan;
-  padding: $spacing-32;
-  box-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.5);
-  border-radius: 8px;
-  background-color: $color-white;
-  max-width: 35rem;
-  min-height: 25rem;
+.card-container {
+  margin: 0 auto 16.3rem;
+  border: 1px solid black;
 
-  &__text-container {
-    margin-bottom: $spacing-32;
+  &__inner {
+    margin-left: $spacing-32;
+    margin-right: $spacing-32;
   }
 
-  &__title {
-    @include text-preset-3;
-    margin-bottom: 0.6rem;
-  }
+  .feature-card {
+    @include feature-card;
 
-  &__description {
-    @include text-preset-5;
-    margin-bottom: 0;
+    &.supervisor {
+      border-top: 4px solid $color-cyan;
+    }
+
+    &.team-builder {
+      border-top: 4px solid $color-red;
+      margin-bottom: $spacing-32;
+    }
+
+    &.karma {
+      border-top: 4px solid $color-orange;
+    }
+
+    &.calculator {
+      border-top: 4px solid $color-blue;
+    }
+
+    &__text-container {
+      margin-bottom: $spacing-32;
+    }
+
+    &__title {
+      @include text-preset-3;
+      margin-bottom: 0.6rem;
+    }
+
+    &__description {
+      @include text-preset-5;
+      margin-bottom: 0;
+    }
   }
 }

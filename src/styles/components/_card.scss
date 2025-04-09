@@ -2,12 +2,26 @@
 @import '../abstracts/variables';
 
 .card-container {
-  margin: 0 auto 16.3rem;
-  border: 1px solid black;
+  &__outer {
+    margin: 0 auto 16.3rem;
+
+    @media (max-width: 768px) {
+      margin-bottom: 8rem;
+    }
+
+    @media (max-width: 425px) {
+      margin-bottom: 4.6rem;
+    }
+  }
 
   &__inner {
     margin-left: $spacing-32;
     margin-right: $spacing-32;
+    padding: 0;
+
+    @media (max-width: 992px) {
+      justify-content: space-around;
+    }
   }
 
   .feature-card {
@@ -15,6 +29,10 @@
 
     &.supervisor {
       border-top: 4px solid $color-cyan;
+
+      @media (max-width: 768px) {
+        margin-bottom: $spacing-32;
+      }
     }
 
     &.team-builder {
@@ -24,6 +42,10 @@
 
     &.karma {
       border-top: 4px solid $color-orange;
+
+      @media (max-width: 768px) {
+        margin-bottom: $spacing-32;
+      }
     }
 
     &.calculator {

@@ -3,7 +3,10 @@
 
 .header-container {
   margin: 10.2rem auto 7.4rem;
-  border: 1px solid black;
+
+  @media (max-width: 425px) {
+    margin-bottom: 6rem;
+  }
 }
 
 .header {
@@ -16,21 +19,27 @@
 
     strong {
       @include text-preset-1;
+
+      @media (max-width: 425px) {
+        font-size: 3rem;
+      }
+
+      @media (max-width: 375px) {
+        font-size: 2.5rem;
+      }
+    }
+
+    @media (max-width: 425px) {
+      font-size: 3rem;
+    }
+
+    @media (max-width: 375px) {
+      font-size: 2.5rem;
     }
   }
 
   &__subtitle {
     @include text-preset-4;
     margin-bottom: 0;
-  }
-
-  @media (max-width: 1200px) {
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-
-  @media (max-width: 768px) {
-    margin-left: 2%;
-    margin-right: 2%;
   }
 }

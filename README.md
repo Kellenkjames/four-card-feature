@@ -34,7 +34,7 @@ This project focuses on:
 
 | Desktop                                             | Mobile                                            |
 | --------------------------------------------------- | ------------------------------------------------- |
-| ![Desktop Screenshot](./images/desktop-preview.jpg) | ![Mobile Screenshot](./images/mobile-preview.jpg) |
+| ![Desktop Screenshot](./design/desktop_screenshot.png) | ![Mobile Screenshot](./design/mobile_screenshot.png) |
 
 ---
 

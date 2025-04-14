@@ -15,7 +15,7 @@
 
   &__title {
     @include text-preset-2;
-    margin-bottom: $spacing-16;
+    margin-bottom: $spacing-medium;
 
     strong {
       @include text-preset-1;
